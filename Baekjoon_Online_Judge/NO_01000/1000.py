@@ -13,5 +13,5 @@ r_input = sys.stdin.readline
 
 if __name__ == "__main__":
     A, B = map(int, r_input().split())
-
+    
     print(A + B)
