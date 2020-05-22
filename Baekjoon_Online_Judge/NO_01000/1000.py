@@ -2,11 +2,16 @@
 import sys
 r_input = sys.stdin.readline
 
-def run():
-    a, b = map(int, r_input().split())
-    print(a + b)
-    print('test')
+# ---------------------------- #
+# | Created by happiness96   | #
+# | Year 2020                | #
+# | Month 05                 | #
+# | Day 22                   | #
+# | 1000 A+B                 | #
+# ---------------------------- #
 
 
 if __name__ == "__main__":
-    run()
+    A, B = map(int, r_input().split())
+
+    print(A + B)
