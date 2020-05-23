@@ -19,7 +19,7 @@ def run():
     len_t = len(t)
 
     print(int(s * len_t == t * len_s))
-
+    
 
 if __name__ == "__main__":
     run()
