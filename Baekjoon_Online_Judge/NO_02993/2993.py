@@ -15,7 +15,7 @@ if __name__ == "__main__":
     word = r_input().rstrip()
     length = len(word)
 
-    result = word
+    result = 'z' * length
 
     for i in range(1, length - 1):
         for j in range(i + 1, length):
