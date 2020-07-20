@@ -1,3 +1,5 @@
+package Baekjoon_Online_Judge.NO_05522;
+
 /*
  ---------------------------- 
  | Created by happiness96   | 
