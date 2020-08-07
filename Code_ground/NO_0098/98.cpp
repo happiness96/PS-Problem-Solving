@@ -18,6 +18,7 @@ using namespace std;
 int main(){
     int prime[30000];
     fill_n(prime, 30000, 1);
+    
     prime[0] = 0;
     prime[1] = 0;
 
