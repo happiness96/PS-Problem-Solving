@@ -1,8 +1,18 @@
 # PS (Problem-Solving)
-### Algorithm PS(Problem-Solving) - Python3, C/CPP, Java
 
+- - -
 
-### BOJ (Baekjoon Online Judge)
-### SW Expert Academy
-### Programmers
-### Code ground
+### PS 어디서 하나요?
+- [BOJ (Baekjoon Online Judge)](URL "https://www.acmicpc.net/")
+- [Codeforces](URL https://codeforces.com/)
+- [SW Expert Academy](URL https://swexpertacademy.com/main/main.do)
+- [Programmers](URL https://programmers.co.kr/)
+- [Code ground](URL https://www.codeground.org/)
+
+- - -
+
+### 무슨 언어를 사용하나요?
+
+- Python3 / pypy3
+- C / CPP
+- Java
