@@ -3,11 +3,11 @@
 - - -
 
 ### PS 어디서 하나요?
-- [BOJ (Baekjoon Online Judge)](URL "https://www.acmicpc.net/")
-- [Codeforces](URL "https://codeforces.com/")
-- [SW Expert Academy](URL "https://swexpertacademy.com/main/main.do")
-- [Programmers](URL "https://programmers.co.kr/")
-- [Code ground](URL "https://www.codeground.org/")
+- [BOJ (Baekjoon Online Judge)](https://www.acmicpc.net/)
+- [Codeforces](https://codeforces.com/)
+- [SW Expert Academy](https://swexpertacademy.com/main/main.do)
+- [Programmers](https://programmers.co.kr/)
+- [Code ground](https://www.codeground.org/)
 
 - - -
 
