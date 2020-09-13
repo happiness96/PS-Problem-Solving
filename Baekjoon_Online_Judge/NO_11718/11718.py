@@ -12,11 +12,5 @@ r_input = sys.stdin.readline
 
 
 if __name__ == "__main__":
-    while True:
-        tmp = r_input().rstrip()
-
-        if tmp:
-            print(tmp)
-        
-        else:
-            break
+    for go_print in sys.stdin:
+        print(go_print.rstrip())
