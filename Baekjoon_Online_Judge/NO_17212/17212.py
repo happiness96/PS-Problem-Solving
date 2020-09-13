@@ -11,7 +11,7 @@ r_input = sys.stdin.readline
 # -------------------------------------- #
 
 
-if __name__ == "__main__":
+def run():
     N = int(r_input())
 
     dp = [sys.maxsize] * (max(8, N + 1))
@@ -32,3 +32,7 @@ if __name__ == "__main__":
             dp[tmp_cost] = min(dp[tmp_cost], dp[cost] + 1)
             
     print(dp[N])
+
+
+if __name__ == "__main__":
+    run()
