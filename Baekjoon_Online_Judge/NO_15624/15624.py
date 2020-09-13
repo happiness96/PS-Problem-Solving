@@ -18,12 +18,12 @@ def run():
 
     if n == 0:
         print(a)
-        sys.exit()
     
-    for _ in range(n - 1):
-        a, b = b, (a + b) % 1000000007
-    
-    print(b)
+    else:
+        for _ in range(n - 1):
+            a, b = b, (a + b) % 1000000007
+        
+        print(b)
 
 
 if __name__ == "__main__":
