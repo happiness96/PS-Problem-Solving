@@ -18,8 +18,7 @@ def run():
     M = int(r_input())
     B = list(map(int, r_input().split()))
 
-    for b in B:
-        print(int(b in A), end=' ')
+    print(*[int(b in A) for b in B])
 
 
 if __name__ == "__main__":
