@@ -27,26 +27,24 @@ if __name__ == "__main__":
     numbers = [int(r_input()) for _ in range(N)]
     numbers.sort()
 
-    gaps = set()
+    gaps = []
 
     for i in range(1, N):
-        gaps.add(numbers[i] - numbers[i - 1])
+        gaps.append(numbers[i] - numbers[i - 1])
     
-    gaps = list(gaps)
-    
-    while len(gaps) != 1:
-        gaps.sort()
-        new_gaps = []
+    gaps.sort()
 
-        for i in range(1, len(gaps)):
-            new_gaps.append(get_gcd(gaps[i - 1], gaps[i]))
-        
-        gaps = sorted(set(new_gaps))
-    
-    res = gaps[0]
+    gap = gaps[0]
 
-    for num in range(2, res // 2 + 1):
-        if res % num == 0:
-            print(num, end=' ')
+    for i in range(1, len(gaps)):
+        gap = get_gcd(gap, gaps[i])
     
-    print(res)
+    res = set()
+
+    for i in range(2, int(gap ** 0.5) + 1):
+        if gap % i == 0:
+            res.add(i)
+            res.add(gap // i)
+
+    res.add(gap)
+    print(*sorted(res))
