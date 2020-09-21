@@ -2,13 +2,13 @@
 import sys
 r_input = sys.stdin.readline
 
-# ---------------------------- #
-# | Created by happiness96   | #
-# | Year 2020                | #
-# | Month 07                 | #
-# | Day 05                   | #
-# | 14011 Small phD Restaurant| #
-# ---------------------------- #
+# -------------------------------------- #
+# | Created by happiness96             | #
+# | Year 2020                          | #
+# | Month 09                           | #
+# | Day 17                             | #
+# | 14011 Small PhD Restaurant         | #
+# -------------------------------------- #
 
 
 if __name__ == "__main__":
@@ -17,4 +17,17 @@ if __name__ == "__main__":
     A = list(map(int, r_input().split()))
     B = list(map(int, r_input().split()))
 
-    save = [[] for _ in range(1000001)]
+    cost = []
+
+    for ind in range(N):
+        cost.append((A[ind], B[ind]))
+    
+    cost.sort()
+
+    for a, b in cost:
+        gap = b - a
+
+        if gap > 0 and a <= M:
+            M += gap
+    
+    print(M)
