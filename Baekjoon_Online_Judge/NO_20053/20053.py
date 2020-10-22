@@ -11,12 +11,16 @@ r_input = sys.stdin.readline
 # -------------------------------------- #
 
 
-if __name__ == "__main__":
+def run():
     T = int(r_input())
 
     for _ in range(T):
         N = int(r_input())
 
-        arr = set(map(int, r_input().split()))
+        arr = list(map(int, r_input().split()))
 
         print(min(arr), max(arr))
+
+
+if __name__ == "__main__":
+    run()
