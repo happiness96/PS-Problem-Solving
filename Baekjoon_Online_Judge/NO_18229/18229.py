@@ -29,6 +29,8 @@ def run():
                 if ind < min_cnt:
                     min_cnt = ind
                     who_charge = no
+                
+                break
     
     print(who_charge, min_cnt + 1)
 
