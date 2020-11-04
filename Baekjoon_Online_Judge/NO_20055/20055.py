@@ -15,7 +15,7 @@ def run():
     N, K = map(int, r_input().split())
 
     A = list(map(int, r_input().split()))
-    robots = [0] * (N)
+    robots = [0] * N
     step = 1
 
     while True:
@@ -25,11 +25,12 @@ def run():
         robots[N - 1] = 0
 
         for ind in range(N - 2, -1, -1):
+            next_ind = ind + 1
             if robots[ind]:
-                if not robots[ind + 1] and A[ind + 1]:
+                if not robots[next_ind] and A[next_ind]:
                     robots[ind] = 0
-                    robots[ind + 1] = 1
-                    A[ind + 1] -= 1
+                    robots[next_ind] = 1
+                    A[next_ind] -= 1
         
         if not robots[0] and A[0]:
             robots[0] = 1
