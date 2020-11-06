@@ -70,6 +70,7 @@ if __name__ == "__main__":
 
     for row in range(5):
         for col in range(5):
-            find_way((row, col), 0, 0, [])
+            if board[row][col] == 'S':
+                find_way((row, col), 0, 0, [])
     
     print(len(result))
