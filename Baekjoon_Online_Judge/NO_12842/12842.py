@@ -1,6 +1,5 @@
 # -*- encoding: utf-8 -*-
 import sys
-from heapq import *
 r_input = sys.stdin.readline
 
 # -------------------------------------- #
