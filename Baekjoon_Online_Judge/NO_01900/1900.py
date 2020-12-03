@@ -19,7 +19,7 @@ def run():
     for ind in range(1, N + 1):
         p, mp = map(int, r_input().split())
 
-        save.append(((mp - 1) / p, ind))
+        save.append((p / (1 - mp), ind))
     
     save.sort(reverse=True)
     
