@@ -14,13 +14,13 @@ r_input = sys.stdin.readline
 if __name__ == "__main__":
     N = int(r_input())
 
-    board = [[0] * 103 for _ in range(103)]
+    board = [[0] * 102 for _ in range(102)]
 
     for paper_no in range(1, N + 1):
         x, y, w, h = map(int, r_input().split())
 
-        for row in range(x, x + h):
-            for col in range(y, y + w):
+        for row in range(x, x + w):
+            for col in range(y, y + h):
                 board[row][col] = paper_no
 
     for paper_no in range(1, N + 1):
